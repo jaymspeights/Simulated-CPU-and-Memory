@@ -1,0 +1,50 @@
+// Written by Jay
+// Prints the squares of the numbers 1 through 100 in Descending order
+// Uses a multiply subroutine to compute the squares
+
+
+1   // load 100 into ac
+100
+27  //push to stack
+14  // Copy ac to x
+16  // Copy ac to y
+27  //push
+23  //MULTIPLY SUBROUTINE
+100
+9   //print result
+1
+1   // load \n
+10
+9   //print \n
+2
+28  //pop
+1   // loading 1
+1
+14  // copy to x
+28  // pop
+12  // decrement ac
+22  //jump if ac != 0
+2
+50  //end
+
+
+.100
+// multiply subroutine
+// AC = X * Y
+// Assumes X > 0
+1   //load 0 into ac
+0
+27  //push ac to stack
+//Loop
+28  //pop ac from stack
+11  //add y to ac
+27  //push ac to stack
+26  //dec x
+15  //copy x into ac
+22  //jump if ac not 0
+103   // Loop addr
+28   //pop ac from stack
+24  //return
+
+.1000
+30
